@@ -38,3 +38,8 @@ def normalize_chemistry_and_name(battery):
         battery['model'] = model.replace('NCO','').strip()
         return
     
+    if 'NCR' in model:
+        battery['chemistry'] = "NCR"
+        battery['model'] = model.replace('NCR','').strip()
+        return
+
