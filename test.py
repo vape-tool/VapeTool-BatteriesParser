@@ -6,6 +6,7 @@ from utils import battery_id
 
 with open('batteries.json', 'r') as file: 
     batteries = json.load(file)
+    print(f'found {len(batteries)} batteries')
     for battery in batteries:
         print('Testing', battery['brand'], battery['model'])
         assert battery['brand']

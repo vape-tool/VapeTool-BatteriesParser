@@ -4,3 +4,9 @@ __pycache__
 venv/
 pngs/
 batteries.json
+dist/
+*.egg-info/
+build/
+webps/
+pngs/
+jpgs/

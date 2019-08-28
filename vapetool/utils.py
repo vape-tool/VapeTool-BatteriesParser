@@ -3,7 +3,7 @@
 def battery_id(battery) -> str:
     b = battery
     brand, model, chemistry, size, capacity = b['brand'], b['model'], b['chemistry'], b['size'], b['capacity']
-    return re.sub('[^A-Za-z0-9_]+', '_', f'{brand}-{model}-{chemistry}-{size}-{capacity}')
+    return re.sub('[^A-Za-z0-9_]+', '_', f'{brand}_{model}_{chemistry}_{size}_{capacity}')
 
 def normalize_chemistry_and_name(battery):
     if battery['chemistry']: return
